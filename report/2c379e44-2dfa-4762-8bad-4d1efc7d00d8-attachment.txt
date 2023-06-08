@@ -1,0 +1,6 @@
+[32mINFO    [0m Selenium_commands:pretty_debug.py:25 [36m
+Test 'Areg_Avetisyan_Exam/tests/exam/test_exam.py::TestExam::test_exam' STARTED
+[0m
+[32mINFO    [0m Selenium_commands:pretty_debug.py:25 [36m
+ Test 'Areg_Avetisyan_Exam/tests/exam/test_exam.py::TestExam::test_exam' COMPLETED
+[0m
