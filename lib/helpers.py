@@ -44,6 +44,9 @@ class Helpers:
     def refresh_page(self):
         self.driver.refresh()
 
+    def go_back(self):
+        self.driver.back()
+
     def focus_on_element(self, element):
         self.actions.move_to_element(element).perform()
 
