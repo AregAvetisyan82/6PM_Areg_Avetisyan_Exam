@@ -9,7 +9,7 @@ class HomePage(Helpers):
         super().__init__(driver)
         self.driver = driver
 
-    free_shipping_link = (By.XPATH, "(//*[@class='Ph-z'])[1]")
+    free_shipping_link = (By.XPATH, "(//*[@href='/shipping-and-delivery-questions'])[1]")
     search_input = (By.ID, "searchAll")
     search_btn = (By.XPATH, "//*[@type='submit']")
     tag_clothing = (By.XPATH, "(//*[@data-singleselect='true'])[1]")

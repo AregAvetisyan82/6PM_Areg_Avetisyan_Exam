@@ -11,7 +11,7 @@ class ExamPage(Helpers):
         super().__init__(driver)
         self.driver = driver
 
-    shipping_and_delivery_txt = (By.XPATH, "//*[@class='ed-z']")
+    shipping_and_delivery_txt = (By.XPATH, "//*[@data-page-id='shipping-and-returns']/h1")
 
     def get_text_of_heading(self, expected_result):
         actual_result = self.find(self.shipping_and_delivery_txt, get_text=True)
