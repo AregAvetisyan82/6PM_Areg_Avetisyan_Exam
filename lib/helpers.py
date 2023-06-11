@@ -12,8 +12,10 @@ class Helpers:
         self.wait = WebDriverWait(self.driver, 10)
         self.actions = ActionChains(driver)
 
-    def find(self, loc, timeout=10, get_text=False, get_attribute=False, check_visibility=False):
+    def find(self, loc, timeout=10, get_text=False, get_attribute=False, check_visibility=False, get_all=False):
         elem = WebDriverWait(self.driver, timeout).until(ec.presence_of_element_located(loc))
+        if get_all:
+            elem = WebDriverWait(self.driver, timeout).until(ec.presence_of_all_elements_located(loc))
         if check_visibility:
             elem = WebDriverWait(self.driver, timeout).until(ec.visibility_of_element_located(loc))
         if get_text:
